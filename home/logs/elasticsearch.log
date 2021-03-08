@@ -1,0 +1,112 @@
+[2021-03-08T15:43:31,097][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: modules directory [E:\github\home\modules] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativeControllers(Spawner.java:66) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:166) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:326) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [main/:?]
+[2021-03-08T15:43:31,112][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: modules directory [E:\github\home\modules] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[main/:?]
+Caused by: java.lang.IllegalStateException: modules directory [E:\github\home\modules] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativeControllers(Spawner.java:66) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:166) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:326) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[main/:?]
+	... 6 more
+[2021-03-08T15:45:58,034][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: modules directory [E:\github\elasticsearch\home\modules] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativeControllers(Spawner.java:66) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:166) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:326) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) [main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) [main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) [main/:?]
+[2021-03-08T15:45:58,053][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: modules directory [E:\github\elasticsearch\home\modules] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:140) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:127) ~[main/:?]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[main/:?]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[main/:?]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:93) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:86) ~[main/:?]
+Caused by: java.lang.IllegalStateException: modules directory [E:\github\elasticsearch\home\modules] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativeControllers(Spawner.java:66) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:166) ~[main/:?]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:326) ~[main/:?]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[main/:?]
+	... 6 more
+[2021-03-08T15:50:25,714][INFO ][o.e.n.Node               ] [] initializing ...
+[2021-03-08T15:50:28,194][INFO ][o.e.e.NodeEnvironment    ] [9wNJY4A] using [1] data paths, mounts [[NewDisk (E:)]], net usable_space [462.6gb], net total_space [465.7gb], types [NTFS]
+[2021-03-08T15:50:28,196][INFO ][o.e.e.NodeEnvironment    ] [9wNJY4A] heap size [3.9gb], compressed ordinary object pointers [true]
+[2021-03-08T15:50:28,201][INFO ][o.e.n.Node               ] [9wNJY4A] node name derived from node ID [9wNJY4AoTiyHFQmB5UqUWw]; set [node.name] to override
+[2021-03-08T15:50:28,202][INFO ][o.e.n.Node               ] [9wNJY4A] version[6.3.2-SNAPSHOT], pid[18968], build[unknown/unknown/Unknown/Unknown], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+[2021-03-08T15:50:28,202][INFO ][o.e.n.Node               ] [9wNJY4A] JVM arguments [-agentlib:jdwp=transport=dt_socket,address=127.0.0.1:59333,suspend=y,server=n, -Des.path.conf=E:\github\elasticsearch\home\config, -Des.path.home=E:\github\elasticsearch\home, -Dlog4j2.disable.jmx=true, -Djava.security.policy=E:\github\elasticsearch\home\config\java.policy, -javaagent:C:\Users\liangjiawei18\.IntelliJIdea2018.2\system\groovyHotSwap\gragent.jar, -javaagent:C:\Users\liangjiawei18\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar=file:/C:/Users/liangjiawei18/AppData/Local/Temp/capture.props, -Dfile.encoding=UTF-8]
+[2021-03-08T15:50:28,202][WARN ][o.e.n.Node               ] [9wNJY4A] version [6.3.2-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+[2021-03-08T15:50:51,302][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [aggs-matrix-stats]
+[2021-03-08T15:50:51,302][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [analysis-common]
+[2021-03-08T15:50:51,302][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [ingest-common]
+[2021-03-08T15:50:51,303][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [lang-expression]
+[2021-03-08T15:50:51,303][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [lang-mustache]
+[2021-03-08T15:50:51,303][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [lang-painless]
+[2021-03-08T15:50:51,303][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [mapper-extras]
+[2021-03-08T15:50:51,304][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [parent-join]
+[2021-03-08T15:50:51,304][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [percolator]
+[2021-03-08T15:50:51,304][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [rank-eval]
+[2021-03-08T15:50:51,304][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [reindex]
+[2021-03-08T15:50:51,304][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [repository-url]
+[2021-03-08T15:50:51,305][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [transport-netty4]
+[2021-03-08T15:50:51,305][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [tribe]
+[2021-03-08T15:50:51,305][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-core]
+[2021-03-08T15:50:51,306][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-deprecation]
+[2021-03-08T15:50:51,306][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-graph]
+[2021-03-08T15:50:51,306][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-logstash]
+[2021-03-08T15:50:51,306][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-ml]
+[2021-03-08T15:50:51,306][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-monitoring]
+[2021-03-08T15:50:51,306][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-rollup]
+[2021-03-08T15:50:51,307][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-security]
+[2021-03-08T15:50:51,307][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-sql]
+[2021-03-08T15:50:51,307][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-upgrade]
+[2021-03-08T15:50:51,307][INFO ][o.e.p.PluginsService     ] [9wNJY4A] loaded module [x-pack-watcher]
+[2021-03-08T15:50:51,308][INFO ][o.e.p.PluginsService     ] [9wNJY4A] no plugins loaded
+[2021-03-08T15:50:53,504][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2021-03-08T15:50:59,164][INFO ][o.e.x.s.a.s.FileRolesStore] [9wNJY4A] parsed [0] roles from file [E:\github\elasticsearch\home\config\roles.yml]
+[2021-03-08T15:51:01,107][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [controller/8072] [Main.cc@109] controller (64 bit): Version 6.3.2 (Build 903094f295d249) Copyright (c) 2018 Elasticsearch BV
+[2021-03-08T15:51:03,194][DEBUG][o.e.a.ActionModule       ] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2021-03-08T15:51:04,117][INFO ][i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+[2021-03-08T15:51:04,317][INFO ][o.e.d.DiscoveryModule    ] [9wNJY4A] using discovery type [zen]
+[2021-03-08T15:51:06,922][INFO ][o.e.n.Node               ] [9wNJY4A] initialized
+[2021-03-08T15:51:06,922][INFO ][o.e.n.Node               ] [9wNJY4A] starting ...
+[2021-03-08T15:51:14,952][INFO ][o.e.t.TransportService   ] [9wNJY4A] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2021-03-08T15:51:14,979][WARN ][o.e.b.BootstrapChecks    ] [9wNJY4A] initial heap size [264241152] not equal to maximum heap size [4196401152]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2021-03-08T15:51:18,058][INFO ][o.e.c.s.MasterService    ] [9wNJY4A] zen-disco-elected-as-master ([0] nodes joined)[, ], reason: new_master {9wNJY4A}{9wNJY4AoTiyHFQmB5UqUWw}{Yw_7AOAARQuHbBPQtc4j-A}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=16784236544, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2021-03-08T15:51:18,066][INFO ][o.e.c.s.ClusterApplierService] [9wNJY4A] new_master {9wNJY4A}{9wNJY4AoTiyHFQmB5UqUWw}{Yw_7AOAARQuHbBPQtc4j-A}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=16784236544, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {9wNJY4A}{9wNJY4AoTiyHFQmB5UqUWw}{Yw_7AOAARQuHbBPQtc4j-A}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=16784236544, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)[, ]]])
+[2021-03-08T15:51:18,246][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [9wNJY4A] Failed to clear cache for realms [[]]
+[2021-03-08T15:51:18,396][INFO ][o.e.g.GatewayService     ] [9wNJY4A] recovered [0] indices into cluster_state
+[2021-03-08T15:51:18,874][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.watches] for index patterns [.watches*]
+[2021-03-08T15:51:18,956][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2021-03-08T15:51:19,261][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.watch-history-7] for index patterns [.watcher-history-7*]
+[2021-03-08T15:51:19,378][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-6-*]
+[2021-03-08T15:51:19,492][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.monitoring-es] for index patterns [.monitoring-es-6-*]
+[2021-03-08T15:51:19,648][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.monitoring-alerts] for index patterns [.monitoring-alerts-6]
+[2021-03-08T15:51:19,773][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.monitoring-beats] for index patterns [.monitoring-beats-6-*]
+[2021-03-08T15:51:19,931][INFO ][o.e.c.m.MetaDataIndexTemplateService] [9wNJY4A] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-6-*]
+[2021-03-08T15:51:20,091][INFO ][o.e.l.LicenseService     ] [9wNJY4A] license [43d9edef-b13b-49bd-bdd9-e44b6c773167] mode [basic] - valid
+[2021-03-08T15:51:23,377][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [9wNJY4A] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2021-03-08T15:51:23,377][INFO ][o.e.n.Node               ] [9wNJY4A] started
